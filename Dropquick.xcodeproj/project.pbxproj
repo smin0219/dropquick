@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		39AE560E1F300B65004979B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE560D1F300B65004979B1 /* AppDelegate.swift */; };
-		39AE56101F300B65004979B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE560F1F300B65004979B1 /* ViewController.swift */; };
 		39AE56131F300B65004979B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AE56111F300B65004979B1 /* Main.storyboard */; };
 		39AE56161F300B65004979B1 /* Dropquick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56141F300B65004979B1 /* Dropquick.xcdatamodeld */; };
 		39AE56181F300B65004979B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39AE56171F300B65004979B1 /* Assets.xcassets */; };
 		39AE561B1F300B65004979B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AE56191F300B65004979B1 /* LaunchScreen.storyboard */; };
 		39AE56261F300B65004979B1 /* DropquickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56251F300B65004979B1 /* DropquickTests.swift */; };
 		39AE56311F300B65004979B1 /* DropquickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56301F300B65004979B1 /* DropquickUITests.swift */; };
+		39AE56401F307A08004979B1 /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE563F1F307A08004979B1 /* LoginRegisterViewController.swift */; };
+		39F69D3E1F329BDB000A0C69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F69D3D1F329BDB000A0C69 /* Extensions.swift */; };
+		39F69D421F32B2BC000A0C69 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F69D411F32B2BC000A0C69 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		39AE560A1F300B65004979B1 /* Dropquick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropquick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AE560D1F300B65004979B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39AE560F1F300B65004979B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39AE56121F300B65004979B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39AE56151F300B65004979B1 /* Dropquick.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dropquick.xcdatamodel; sourceTree = "<group>"; };
 		39AE56171F300B65004979B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		39AE562C1F300B65004979B1 /* DropquickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropquickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AE56301F300B65004979B1 /* DropquickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropquickUITests.swift; sourceTree = "<group>"; };
 		39AE56321F300B65004979B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39AE563F1F307A08004979B1 /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		39F69D3D1F329BDB000A0C69 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		39F69D411F32B2BC000A0C69 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,8 @@
 		39AE560C1F300B65004979B1 /* Dropquick */ = {
 			isa = PBXGroup;
 			children = (
+				39AE563E1F3079CE004979B1 /* Controller */,
 				39AE560D1F300B65004979B1 /* AppDelegate.swift */,
-				39AE560F1F300B65004979B1 /* ViewController.swift */,
 				39AE56111F300B65004979B1 /* Main.storyboard */,
 				39AE56171F300B65004979B1 /* Assets.xcassets */,
 				39AE56191F300B65004979B1 /* LaunchScreen.storyboard */,
@@ -126,6 +130,16 @@
 				39AE56321F300B65004979B1 /* Info.plist */,
 			);
 			path = DropquickUITests;
+			sourceTree = "<group>";
+		};
+		39AE563E1F3079CE004979B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39AE563F1F307A08004979B1 /* LoginRegisterViewController.swift */,
+				39F69D411F32B2BC000A0C69 /* MainNavigationController.swift */,
+				39F69D3D1F329BDB000A0C69 /* Extensions.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AE56101F300B65004979B1 /* ViewController.swift in Sources */,
+				39F69D421F32B2BC000A0C69 /* MainNavigationController.swift in Sources */,
+				39F69D3E1F329BDB000A0C69 /* Extensions.swift in Sources */,
+				39AE56401F307A08004979B1 /* LoginRegisterViewController.swift in Sources */,
 				39AE56161F300B65004979B1 /* Dropquick.xcdatamodeld in Sources */,
 				39AE560E1F300B65004979B1 /* AppDelegate.swift in Sources */,
 			);
@@ -520,6 +536,7 @@
 				39AE56371F300B65004979B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AE56381F300B65004979B1 /* Build configuration list for PBXNativeTarget "DropquickTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +545,7 @@
 				39AE563A1F300B65004979B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AE563B1F300B65004979B1 /* Build configuration list for PBXNativeTarget "DropquickUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +554,7 @@
 				39AE563D1F300B65004979B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
