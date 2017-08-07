@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainNavigationController: UINavigationController {
+class MainNavigationController: UINavigationController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,18 +16,30 @@ class MainNavigationController: UINavigationController {
         self.navigationBar.isHidden = true
         
         let isLoggedIn = false
+        
+        /*
+        view.addSubview(collectionView)
+        
+        collectionView.anchorToTop(top:view.topAnchor, left:view.leftAnchor, bottom:view.bottomAnchor, right: view.rightAnchor)
        
         //present(loginRegisterViewController, animated: true, completion: nil)
+        */
         
         if isLoggedIn{
             
         }else{
-            perform(#selector(showLoginRegisterViewController), with: nil, afterDelay: 0.01)
+            perform(#selector(showCollectionViewController), with: nil, afterDelay: 0.01)
         }
+ 
     }
     
-    func showLoginRegisterViewController(){
-        let loginRegisterViewController = LoginRegisterViewController()
-        present(loginRegisterViewController, animated: true, completion: nil)
+    func showCollectionViewController(){
+    let collectionViewController = CollectionViewController()
+        present(collectionViewController, animated: true, completion: nil)
+    }
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        print(UIDevice.current.orientation.isLandscape)
+
     }
 }
