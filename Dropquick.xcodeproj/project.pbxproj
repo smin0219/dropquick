@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		393245991F3B741900DE3169 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393245981F3B741900DE3169 /* MainNavigationController.swift */; };
+		397726751F40FAEA0046FA2D /* LeftPaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397726741F40FAEA0046FA2D /* LeftPaddedTextField.swift */; };
 		39AE560E1F300B65004979B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE560D1F300B65004979B1 /* AppDelegate.swift */; };
 		39AE56131F300B65004979B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AE56111F300B65004979B1 /* Main.storyboard */; };
 		39AE56161F300B65004979B1 /* Dropquick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56141F300B65004979B1 /* Dropquick.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		393245981F3B741900DE3169 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		397726741F40FAEA0046FA2D /* LeftPaddedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPaddedTextField.swift; sourceTree = "<group>"; };
 		39AE560A1F300B65004979B1 /* Dropquick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropquick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AE560D1F300B65004979B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39AE56121F300B65004979B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				39AE560D1F300B65004979B1 /* AppDelegate.swift */,
 				39F69D3D1F329BDB000A0C69 /* Extensions.swift */,
+				397726741F40FAEA0046FA2D /* LeftPaddedTextField.swift */,
 				39AE56111F300B65004979B1 /* Main.storyboard */,
 				39AE56191F300B65004979B1 /* LaunchScreen.storyboard */,
 				39AE56171F300B65004979B1 /* Assets.xcassets */,
@@ -311,6 +314,7 @@
 			files = (
 				39C710361F3811C70016ACEF /* LoginRegisterViewController.swift in Sources */,
 				39C710381F3812220016ACEF /* LoginRegisterView.swift in Sources */,
+				397726751F40FAEA0046FA2D /* LeftPaddedTextField.swift in Sources */,
 				393245991F3B741900DE3169 /* MainNavigationController.swift in Sources */,
 				39C7103A1F3813430016ACEF /* RegisterViewController.swift in Sources */,
 				39F69D3E1F329BDB000A0C69 /* Extensions.swift in Sources */,

@@ -17,7 +17,7 @@ class MainNavigationController: UINavigationController{
         let loginRegisterViewController = LoginRegisterViewController()
         self.viewControllers = [loginRegisterViewController]
         self.navigationBar.isHidden = true
-
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
