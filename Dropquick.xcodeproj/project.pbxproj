@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391BD3661F565720006AF6EF /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BD3651F565720006AF6EF /* EmailCell.swift */; };
+		391BD3681F57B4B2006AF6EF /* PasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BD3671F57B4B2006AF6EF /* PasswordCell.swift */; };
+		391BD36A1F57BBF6006AF6EF /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BD3691F57BBF6006AF6EF /* Register.swift */; };
 		393245991F3B741900DE3169 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393245981F3B741900DE3169 /* MainNavigationController.swift */; };
 		393CCC5A1F4B9B9700D4D691 /* DatabaseManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CCC591F4B9B9700D4D691 /* DatabaseManagement.swift */; };
 		393CCCC11F4BA39900D4D691 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393CCCB41F4B9D3A00D4D691 /* SQLite.framework */; };
@@ -20,8 +23,9 @@
 		39AE561B1F300B65004979B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AE56191F300B65004979B1 /* LaunchScreen.storyboard */; };
 		39AE56261F300B65004979B1 /* DropquickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56251F300B65004979B1 /* DropquickTests.swift */; };
 		39AE56311F300B65004979B1 /* DropquickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE56301F300B65004979B1 /* DropquickUITests.swift */; };
-		39C710361F3811C70016ACEF /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C710351F3811C70016ACEF /* LoginRegisterViewController.swift */; };
+		39C710361F3811C70016ACEF /* LoginRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C710351F3811C70016ACEF /* LoginRegisterController.swift */; };
 		39C7103A1F3813430016ACEF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C710391F3813430016ACEF /* RegisterViewController.swift */; };
+		39EDFF8E1F5505A10049DC17 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDFF8D1F5505A10049DC17 /* RegisterController.swift */; };
 		39F69D3E1F329BDB000A0C69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F69D3D1F329BDB000A0C69 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +117,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		391BD3651F565720006AF6EF /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		391BD3671F57B4B2006AF6EF /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
+		391BD3691F57BBF6006AF6EF /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		393245981F3B741900DE3169 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		393CCC591F4B9B9700D4D691 /* DatabaseManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagement.swift; sourceTree = "<group>"; };
 		393CCCA91F4B9D3A00D4D691 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../SQLite.swift-swift-4/SQLite.xcodeproj"; sourceTree = "<group>"; };
@@ -130,8 +137,9 @@
 		39AE562C1F300B65004979B1 /* DropquickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropquickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AE56301F300B65004979B1 /* DropquickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropquickUITests.swift; sourceTree = "<group>"; };
 		39AE56321F300B65004979B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39C710351F3811C70016ACEF /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		39C710351F3811C70016ACEF /* LoginRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterController.swift; sourceTree = "<group>"; };
 		39C710391F3813430016ACEF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		39EDFF8D1F5505A10049DC17 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		39F69D3D1F329BDB000A0C69 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,8 +216,6 @@
 		39AE560C1F300B65004979B1 /* Dropquick */ = {
 			isa = PBXGroup;
 			children = (
-				393245981F3B741900DE3169 /* MainNavigationController.swift */,
-				39C710351F3811C70016ACEF /* LoginRegisterViewController.swift */,
 				39C7102F1F37C9ED0016ACEF /* Model */,
 				39C710301F37C9F90016ACEF /* View */,
 				39AE563E1F3079CE004979B1 /* Controller */,
@@ -240,6 +246,9 @@
 		39AE563E1F3079CE004979B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				393245981F3B741900DE3169 /* MainNavigationController.swift */,
+				39C710351F3811C70016ACEF /* LoginRegisterController.swift */,
+				39EDFF8D1F5505A10049DC17 /* RegisterController.swift */,
 				39C710391F3813430016ACEF /* RegisterViewController.swift */,
 			);
 			name = Controller;
@@ -263,6 +272,7 @@
 		39C7102F1F37C9ED0016ACEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				391BD3691F57BBF6006AF6EF /* Register.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 		39C710301F37C9F90016ACEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				391BD3651F565720006AF6EF /* EmailCell.swift */,
+				391BD3671F57B4B2006AF6EF /* PasswordCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -474,13 +486,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39C710361F3811C70016ACEF /* LoginRegisterViewController.swift in Sources */,
+				39C710361F3811C70016ACEF /* LoginRegisterController.swift in Sources */,
+				391BD3681F57B4B2006AF6EF /* PasswordCell.swift in Sources */,
 				397726751F40FAEA0046FA2D /* LeftPaddedTextField.swift in Sources */,
 				393245991F3B741900DE3169 /* MainNavigationController.swift in Sources */,
 				39C7103A1F3813430016ACEF /* RegisterViewController.swift in Sources */,
 				39F69D3E1F329BDB000A0C69 /* Extensions.swift in Sources */,
+				391BD36A1F57BBF6006AF6EF /* Register.swift in Sources */,
 				393CCC5A1F4B9B9700D4D691 /* DatabaseManagement.swift in Sources */,
+				39EDFF8E1F5505A10049DC17 /* RegisterController.swift in Sources */,
 				39AE56161F300B65004979B1 /* Dropquick.xcdatamodeld in Sources */,
+				391BD3661F565720006AF6EF /* EmailCell.swift in Sources */,
 				39AE560E1F300B65004979B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

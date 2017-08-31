@@ -14,10 +14,10 @@ class DatabaseManagement{
     var database: Connection!
     
     let userTable = Table("users")
-    let id = Expression<Int>("id")
+    //dlet id = Expression<Int>("id")
+    let userName = Expression<String>("name")
     let userEmail = Expression<String>("email")
     let userPassword = Expression<String>("password")
-    let userName = Expression<String>("name")
     let userMobileNumber = Expression<String>("mobile")
     
     func setupDatabase(){
@@ -36,8 +36,8 @@ class DatabaseManagement{
         
         let createTable = self.userTable.create { (table) in
             //table.column(self.id, primaryKey: true)
-            table.column(self.userName)
             table.column(self.userEmail, unique: true)
+            table.column(self.userPassword)
         }
         
         do{
@@ -48,19 +48,18 @@ class DatabaseManagement{
         }
     }
     
-    func insertUser(userName: String, userEmail: String){
-        print("Insert user")
-        //let id = 0
-        //let userEmail = "min"
-        let insertUser = self.userTable.insert(self.userName <- userName, self.userEmail <- userEmail)
+    func insertUser(userEmail: String, userPassword: String){
+
+        //print("email: \(userEmail), password: \(userPassword)")
+  
+        let insertUser = self.userTable.insert(self.userEmail <- userEmail, self.userPassword <- userPassword)
         
         do{
             try self.database.run(insertUser)
-            print("User Inserted")
+            print("User added to database")
         } catch{
             print(error)
         }
-        
     }
     
     func removeTable(){
@@ -78,7 +77,7 @@ class DatabaseManagement{
         do{
             let users = try self.database.prepare(self.userTable)
             for user in users {
-                print("userName: \(user[self.userName]), userEmail: \(user[self.userEmail])")
+                print("userEmail: \(user[self.userEmail]), userPassword: \(user[self.userPassword])")
             }
         }catch{
             print(error)
